@@ -13,6 +13,12 @@
 		1C0DC4D62369FCB6007ADD32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C0DC4D42369FCB6007ADD32 /* Main.storyboard */; };
 		1C0DC4D82369FCB8007ADD32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C0DC4D72369FCB8007ADD32 /* Assets.xcassets */; };
 		1C0DC4DB2369FCB8007ADD32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C0DC4D92369FCB8007ADD32 /* LaunchScreen.storyboard */; };
+		1C0DC4E92369FEA3007ADD32 /* Pizza.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C0DC4E32369FEA3007ADD32 /* Pizza.png */; };
+		1C0DC4EA2369FEA3007ADD32 /* Burger.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C0DC4E42369FEA3007ADD32 /* Burger.png */; };
+		1C0DC4EB2369FEA3007ADD32 /* Banana.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C0DC4E52369FEA3007ADD32 /* Banana.png */; };
+		1C0DC4EC2369FEA3007ADD32 /* Fries.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C0DC4E62369FEA3007ADD32 /* Fries.png */; };
+		1C0DC4ED2369FEA3007ADD32 /* Apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C0DC4E72369FEA3007ADD32 /* Apple.png */; };
+		1C0DC4EE2369FEA3007ADD32 /* Orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C0DC4E82369FEA3007ADD32 /* Orange.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		1C0DC4D72369FCB8007ADD32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C0DC4DA2369FCB8007ADD32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C0DC4DC2369FCB8007ADD32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C0DC4E32369FEA3007ADD32 /* Pizza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pizza.png; sourceTree = "<group>"; };
+		1C0DC4E42369FEA3007ADD32 /* Burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Burger.png; sourceTree = "<group>"; };
+		1C0DC4E52369FEA3007ADD32 /* Banana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Banana.png; sourceTree = "<group>"; };
+		1C0DC4E62369FEA3007ADD32 /* Fries.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fries.png; sourceTree = "<group>"; };
+		1C0DC4E72369FEA3007ADD32 /* Apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Apple.png; sourceTree = "<group>"; };
+		1C0DC4E82369FEA3007ADD32 /* Orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orange.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 		1C0DC4CD2369FCB6007ADD32 /* CustomFoodTable */ = {
 			isa = PBXGroup;
 			children = (
+				1C0DC4E22369FE99007ADD32 /* Images */,
 				1C0DC4CE2369FCB6007ADD32 /* AppDelegate.swift */,
 				1C0DC4D02369FCB6007ADD32 /* SceneDelegate.swift */,
 				1C0DC4D22369FCB6007ADD32 /* ViewController.swift */,
@@ -65,6 +78,19 @@
 				1C0DC4DC2369FCB8007ADD32 /* Info.plist */,
 			);
 			path = CustomFoodTable;
+			sourceTree = "<group>";
+		};
+		1C0DC4E22369FE99007ADD32 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1C0DC4E72369FEA3007ADD32 /* Apple.png */,
+				1C0DC4E52369FEA3007ADD32 /* Banana.png */,
+				1C0DC4E42369FEA3007ADD32 /* Burger.png */,
+				1C0DC4E62369FEA3007ADD32 /* Fries.png */,
+				1C0DC4E82369FEA3007ADD32 /* Orange.png */,
+				1C0DC4E32369FEA3007ADD32 /* Pizza.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +151,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C0DC4EA2369FEA3007ADD32 /* Burger.png in Resources */,
 				1C0DC4DB2369FCB8007ADD32 /* LaunchScreen.storyboard in Resources */,
+				1C0DC4EB2369FEA3007ADD32 /* Banana.png in Resources */,
 				1C0DC4D82369FCB8007ADD32 /* Assets.xcassets in Resources */,
+				1C0DC4EC2369FEA3007ADD32 /* Fries.png in Resources */,
+				1C0DC4E92369FEA3007ADD32 /* Pizza.png in Resources */,
+				1C0DC4ED2369FEA3007ADD32 /* Apple.png in Resources */,
 				1C0DC4D62369FCB6007ADD32 /* Main.storyboard in Resources */,
+				1C0DC4EE2369FEA3007ADD32 /* Orange.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
