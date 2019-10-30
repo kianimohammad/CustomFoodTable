@@ -22,7 +22,7 @@ class FoodTableViewCell: UITableViewCell {
         caloriesLabel?.text = "\(calories) cals"
         
         iconFoodImage = UIImageView(image: UIImage(named: image))
-        iconFoodImage?.frame = CGRect(x: 310, y: 10, width: 40, height: 40)
+        iconFoodImage?.frame = CGRect(x: 310, y: 5, width: 40, height: 40)
         
         self.contentView.addSubview(nameLabel!)
         self.contentView.addSubview(caloriesLabel!)
