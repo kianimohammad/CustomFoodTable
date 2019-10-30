@@ -28,7 +28,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return foodData.count ?? 0
+        return foodData?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -48,9 +48,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        <#code#>
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let foodName = foodData![indexPath.row].name
+        let alertController = UIAlertController(title: "Food Selected", message: "You have selected \(foodName)", preferredStyle: .actionSheet)
+        let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        let printAction = UIAlertAction(title: "Print", style: .default) { (action) in
+            print("Selected food is \(foodName)")
+        }
+        
+        alertController.addAction(okAction)
+        alertController.addAction(printAction)
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
 
 
 }
