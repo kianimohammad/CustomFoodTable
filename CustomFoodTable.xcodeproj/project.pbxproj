@@ -19,6 +19,7 @@
 		1C0DC4EC2369FEA3007ADD32 /* Fries.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C0DC4E62369FEA3007ADD32 /* Fries.png */; };
 		1C0DC4ED2369FEA3007ADD32 /* Apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C0DC4E72369FEA3007ADD32 /* Apple.png */; };
 		1C0DC4EE2369FEA3007ADD32 /* Orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C0DC4E82369FEA3007ADD32 /* Orange.png */; };
+		1C0DC4F0236A06FC007ADD32 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0DC4EF236A06FC007ADD32 /* FoodTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		1C0DC4E62369FEA3007ADD32 /* Fries.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fries.png; sourceTree = "<group>"; };
 		1C0DC4E72369FEA3007ADD32 /* Apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Apple.png; sourceTree = "<group>"; };
 		1C0DC4E82369FEA3007ADD32 /* Orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orange.png; sourceTree = "<group>"; };
+		1C0DC4EF236A06FC007ADD32 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				1C0DC4D72369FCB8007ADD32 /* Assets.xcassets */,
 				1C0DC4D92369FCB8007ADD32 /* LaunchScreen.storyboard */,
 				1C0DC4DC2369FCB8007ADD32 /* Info.plist */,
+				1C0DC4EF236A06FC007ADD32 /* FoodTableViewCell.swift */,
 			);
 			path = CustomFoodTable;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C0DC4D32369FCB6007ADD32 /* ViewController.swift in Sources */,
+				1C0DC4F0236A06FC007ADD32 /* FoodTableViewCell.swift in Sources */,
 				1C0DC4CF2369FCB6007ADD32 /* AppDelegate.swift in Sources */,
 				1C0DC4D12369FCB6007ADD32 /* SceneDelegate.swift in Sources */,
 			);
