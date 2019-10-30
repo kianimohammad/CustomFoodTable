@@ -10,5 +10,20 @@ import UIKit
 
 class FoodTableViewCell: UITableViewCell {
 
-
+    var nameLabel: UILabel?
+    var caloriesLabel: UILabel?
+    var iconFoodImage: UIImageView?
+    
+    func setName(name: String, calories: Int, image: String) {
+        nameLabel = UILabel(frame: CGRect(x: 10, y: 15, width: 140, height: 40))
+        nameLabel?.text = name
+        
+        caloriesLabel = UILabel(frame: CGRect(x: 160, y: 15, width: 140, height: 40))
+        caloriesLabel?.text = "\(calories) cals"
+        
+        iconFoodImage?.image = UIImage(named: image)
+        iconFoodImage?.frame = CGRect(x: 310, y: 15, width: 40, height: 40)
+        
+        
+    }
 }
