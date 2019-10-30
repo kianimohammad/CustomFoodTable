@@ -29,7 +29,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let foodName = foods![indexPath.row]
         cell.textLabel?.text = foodName
         cell.imageView?.image = UIImage(named: foodName)
-        cell.detailTextLabel?.text = "\(calories![indexPath.row])"
+        cell.detailTextLabel?.text = "calories: \(calories![indexPath.row])"
         return cell
     }
 
