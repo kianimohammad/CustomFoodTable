@@ -61,6 +61,46 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         self.present(alertController, animated: true, completion: nil)
     }
+    
+    //    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+    //        let delete = UITableViewRowAction(style: .destructive, title: "Delete") { (action, indexPath) in
+    //            self.foodData?.remove(at: indexPath.row)
+    //            tableView.deleteRows(at: [indexPath], with: .fade)
+    //            print(self.foodData)
+    //        }
+    //        let share = UITableViewRowAction(style: .default, title: "Share") { (action, indexPath) in
+    //            print("I want to share: \(self.foodData![indexPath.row].name)")
+    //        }
+    //        share.backgroundColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
+    //        return [delete, share]
+    //    }
+
+        func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+            let DeleteAction = UIContextualAction(style: .destructive, title: "Delete", handler: { (action, view, success) in
+                self.foodData?.remove(at: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: .fade)
+                print(self.foodData)
+                print("Delete")
+            })
+            let shareAction = UIContextualAction(style: .normal, title: "Share") { (action, view, success) in
+                print("I want to share: \(self.foodData![indexPath.row].name)")
+            }
+            shareAction.backgroundColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
+            return UISwipeActionsConfiguration(actions: [DeleteAction, shareAction])
+        }
+        func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+            let DeleteAction = UIContextualAction(style: .destructive, title: "Delete", handler: { (action, view, success) in
+                self.foodData?.remove(at: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: .fade)
+                print(self.foodData)
+                print("Delete")
+            })
+            let shareAction = UIContextualAction(style: .normal, title: "Share") { (action, view, success) in
+                print("I want to share: \(self.foodData![indexPath.row].name)")
+            }
+            shareAction.backgroundColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
+            return UISwipeActionsConfiguration(actions: [DeleteAction, shareAction])
+        }
 
 
 }
