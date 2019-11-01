@@ -20,6 +20,8 @@
 		1C0DC4ED2369FEA3007ADD32 /* Apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C0DC4E72369FEA3007ADD32 /* Apple.png */; };
 		1C0DC4EE2369FEA3007ADD32 /* Orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C0DC4E82369FEA3007ADD32 /* Orange.png */; };
 		1C0DC4F0236A06FC007ADD32 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0DC4EF236A06FC007ADD32 /* FoodTableViewCell.swift */; };
+		1CE11A75236CA0820060A0BE /* FoodNibCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE11A73236CA0820060A0BE /* FoodNibCell.swift */; };
+		1CE11A76236CA0820060A0BE /* FoodNibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CE11A74236CA0820060A0BE /* FoodNibCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		1C0DC4E72369FEA3007ADD32 /* Apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Apple.png; sourceTree = "<group>"; };
 		1C0DC4E82369FEA3007ADD32 /* Orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orange.png; sourceTree = "<group>"; };
 		1C0DC4EF236A06FC007ADD32 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		1CE11A73236CA0820060A0BE /* FoodNibCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodNibCell.swift; sourceTree = "<group>"; };
+		1CE11A74236CA0820060A0BE /* FoodNibCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodNibCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 				1C0DC4D92369FCB8007ADD32 /* LaunchScreen.storyboard */,
 				1C0DC4DC2369FCB8007ADD32 /* Info.plist */,
 				1C0DC4EF236A06FC007ADD32 /* FoodTableViewCell.swift */,
+				1CE11A73236CA0820060A0BE /* FoodNibCell.swift */,
+				1CE11A74236CA0820060A0BE /* FoodNibCell.xib */,
 			);
 			path = CustomFoodTable;
 			sourceTree = "<group>";
@@ -163,6 +169,7 @@
 				1C0DC4ED2369FEA3007ADD32 /* Apple.png in Resources */,
 				1C0DC4D62369FCB6007ADD32 /* Main.storyboard in Resources */,
 				1C0DC4EE2369FEA3007ADD32 /* Orange.png in Resources */,
+				1CE11A76236CA0820060A0BE /* FoodNibCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +184,7 @@
 				1C0DC4F0236A06FC007ADD32 /* FoodTableViewCell.swift in Sources */,
 				1C0DC4CF2369FCB6007ADD32 /* AppDelegate.swift in Sources */,
 				1C0DC4D12369FCB6007ADD32 /* SceneDelegate.swift in Sources */,
+				1CE11A75236CA0820060A0BE /* FoodNibCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
