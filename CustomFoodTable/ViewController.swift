@@ -24,7 +24,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         calories = [50, 60, 900, 600, 30, 700]
         foodData = [("Apple", 50), ("Banana", 60), ("Burger", 900), ("Fries", 600), ("Orange", 30), ("Pizza", 700)]
         
-        tableView.register(FoodTableViewCell.self, forCellReuseIdentifier: "food cell")
+//        tableView.register(FoodTableViewCell.self, forCellReuseIdentifier: "food cell")
+        let nib = UINib(nibName: "FoodNibCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "food nib cell")
+        self.tableView.isEditing = true
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -43,7 +46,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let foodName = foodData![indexPath.row].name
         let foodCalory = foodData![indexPath.row].calory
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "food cell") as! FoodTableViewCell
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "food cell") as! FoodTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "food nib cell") as! FoodNibCell
         cell.setName(name: foodName, calories: foodCalory, image: foodName)
         return cell
     }
@@ -101,6 +105,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             shareAction.backgroundColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
             return UISwipeActionsConfiguration(actions: [DeleteAction, shareAction])
         }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .none
+    }
+    func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
+        return false
+    }
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let movedObject = self.foodData![sourceIndexPath.row]
+        foodData!.remove(at: sourceIndexPath.row)
+        foodData!.insert(movedObject, at: destinationIndexPath.row)
+    }
 
 
 }
